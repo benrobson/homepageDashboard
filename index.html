@@ -9,34 +9,40 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
-<body background="img/background.jpg">
+<body background="img/background.jpg" onLoad="codeAddress()">
 	<div class="wrapper">
 		<div class="bookmark-container">
-
-<p>Click on the buttons inside the tabbed menu:</p>
-
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-</div>
-
-<div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
-</div>
-
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
-</div>
-
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-
+			<div class="tab">
+			  <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'favorites')">Favorites</button>
+			  <button class="tablinks" onclick="openCity(event, 'social-media')">Social Media</button>
+			  <button class="tablinks" onclick="openCity(event, 'streaming')">Streaming</button>
+			  <button class="tablinks" onclick="openCity(event, 'other-resources')">Other Resources</button>
+			</div>
 			
+			<div id="favorites" class="tabcontent">
+				<a href="https://www.facebook.com/"><img src="img/icons/facebook.png"></a>
+				<a href="https://youtube.com/"><img src="img/icons/youtube.png"></a>
+				<a href="https://trello.com/b/q9UegeTQ/my-trello-board/"><img src="img/icons/trello.png"></a>
+				<a href="https://mail.google.com/"><img src="img/icons/gmail.png"></a>
+			</div>
+			
+			<div id="social-media" class="tabcontent">
+				<a href="https://www.facebook.com/"><img src="img/icons/facebook.png"></a>
+				<a href="https://www.twitter.com/"><img src="img/icons/twitter.png"></a>
+				<a href="https://www.instagram.com/"><img src="img/icons/instagram.png"></a>
+			</div>
+			
+			<div id="streaming" class="tabcontent">
+				<a href="https://youtube.com/"><img src="img/icons/youtube.png"></a>
+				<a href="https://netflix.com/"><img src="img/icons/netflix.png"></a>
+				<a href="https://stan.com.au/"><img src="img/icons/stan.png"></a>
+				<a href="https://twitch.tv/"><img src="img/icons/twitch.png"></a>
+			</div>
+			
+			<div id="other-resources" class="tabcontent">
+			  <h3>Other Resources</h3>
+			  <p>Tokyo is the capital of Japan.</p>
+			</div>
 		</div>
 	</div>
 </body>
