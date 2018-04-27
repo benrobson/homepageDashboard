@@ -37,11 +37,15 @@
 .tabcontent {
     float: left;
     padding: 15px;
-    width: 730px;
+    width: 870px;
     border-left: none;
     min-height: 490px;
 }
 
 .tabcontent img {
 	padding: 10px;
+}
+
+td {
+	padding-bottom: 15px;
 }
