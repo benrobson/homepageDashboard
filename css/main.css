@@ -23,6 +23,7 @@
 	height: 500px;
 }
 
-a {
+a,
+a:visited {
 	color: blue;
 }
