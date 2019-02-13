@@ -8,5 +8,5 @@
   "adminpaneluser": "process.env.adminpaneluser",
   "adminpanelpassword": "process.env.adminpanelpassword",
 
-  "applicationlistenport": "process.env.applicationlistenport"
+  "applicationlistenport": "8080"
 }

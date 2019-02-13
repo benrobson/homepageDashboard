@@ -22,16 +22,16 @@ app.set('views', 'views');
 app.use(express.static('public'));
 
 app.use(sessions({
-  secret: config.sessionsecret,
+  secret: process.env.sessionsecret || config.sessionsecret,
   resave: false,
   saveUninitialized: true
 }));
 
 const connection = mysql.createConnection({
-  host: config.databasehost,
-  user: config.databaseuser,
-  password: config.databasepassword,
-  database: config.databasedatabase
+  host: process.env.databasehost || config.databasehost,
+  user: process.env.databaseuser || config.databaseuser,
+  password: process.env.databasepassword || config.databasepassword,
+  database: process.env.databasedatabase || config.databasedatabase
 });
 
 connection.connect(function(err) {
