@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <% include partials/header.ejs %>
+  </head>
+    <h1>Login</h1>
+
+    <div class="login">
+      <form action="/login" method="post">
+        <label for="username">Username: </label>
+          <input type="text" name="username" placeholder="admin" required>
+        <label for="password">Password: </label>
+          <input type="password" name="password" placeholder="password" required>
+          <input type="submit" name="" value="Login">
+      </form>
+    </div>
+</html>

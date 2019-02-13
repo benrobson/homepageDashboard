@@ -1,0 +1,20 @@
+<div class="bookmarkMainTable">
+  <div class="categoryPanel">
+    <a href="/getcatagory?category=favorites">Favorites</a><br>
+    <a href="/getcatagory?category=socialmedia">Social Media</a><br>
+    <a href="/getcatagory?category=streaming">Streaming</a><br>
+    <a href="/getcatagory?category=utilites">Utilites</a><br>
+    <a href="/getcatagory?category=development">Development</a><br>
+    <a href="/getcatagory?category=otherresources">Other Resources</a>
+  </div>
+
+  <div class="linksPanel">
+    <% objdata.forEach(function (data) { %>
+      <div class="bookmarkEntry">
+        <a href="<%= data.link %>" target="_blank"><img src="<%= data.image %>" height="100px"></a>
+      </div>
+    <% }) %>
+  </div>
+
+  <div class="loginbuttoncorner"><a href="/login"><button class="btn-primary" method="post" type="button"><i class="fas fa-sign-in-alt"></i> Login</button></a></div>
+</div>

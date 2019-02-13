@@ -1,0 +1,12 @@
+{
+  "databasehost": "",
+  "databaseuser": "",
+  "databasepassword": "wl12nSjgxK",
+  "databasedatabase": "sql12278295",
+
+  "sessionsecret": "",
+  "adminpaneluser": "",
+  "adminpanelpassword": "",
+
+  "applicationlistenport": ""
+}

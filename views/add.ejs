@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <% include partials/header.ejs %>
+  </head>
+  <body>
+    <h1>Add a Site</h1>
+      <div id="addtable">
+        <form id="addform" method="post" action="/add">
+          <label for="name">Site Name: </label>
+            <input type="text" name="name" placeholder="Google" required />
+          <label for="link">Site Link: </label>
+            <input type="text" name="link" placeholder="http://www.google.com.au" required />
+          <label for="description">Site description: </label>
+            <input type="text" name="description" placeholder="This is the homepage of the internet." required />
+          <label for="image">Site Image: </label>
+            <input type="text" name="image" placeholder="https://i.imgur.com/EJOjIMC.jpg" required />
+
+          <label for="category">Category: </label>
+            <select name="category" multiple size="6" required>
+              <option value="favorites">Favorites</option>
+              <option value="socialmedia">Social Media</option>
+              <option value="streaming">Streaming</option>
+              <option value="utilities">Utilities</option>
+              <option value="development">Development</option>
+              <option value="otherresources">Other Resources</option>
+            </select>
+          <input type="submit" name="" value="Add Site">
+        </form>
+      </div>
+</body>
+</html>

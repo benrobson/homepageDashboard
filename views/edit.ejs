@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <% include partials/header.ejs %>
+  </head>
+  <body>
+    <h1>Edit a Site</h1>
+      <div id="edittable">
+        <form id="editform" method="post" action="/edit">
+        <% objdata.forEach(function (data) { %>
+            <input type="hidden" name="id" value="<%= data.id %>"/>
+            <label for="name">Site Name: </label>
+              <input type="text" name="name" value="<%= data.name %>" />
+            <label for="link">Site Link: </label>
+              <input type="text" name="link" value="<%= data.link %>" />
+            <label for="description">Site Link: </label>
+              <input type="text" name="description" value="<%= data.description %>" />
+            <label for="image">Site Image: </label>
+              <input type="text" name="image" value="<%= data.image %>" />
+        <% }) %>
+
+          <label for="category">Category: </label>
+            <select name="category" multiple size="6" required>
+              <option value="favorites">Favorites</option>
+              <option value="socialmedia">Social Media</option>
+              <option value="streaming">Streaming</option>
+              <option value="utilities">Utilities</option>
+              <option value="development">Development</option>
+              <option value="otherresources">Other Resources</option>
+            </select>
+          <input type="submit" name="" value="Edit Site">
+        </form>
+      </div>
+</body>
+</html>

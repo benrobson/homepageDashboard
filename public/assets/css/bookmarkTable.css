@@ -1,0 +1,29 @@
+.bookmarkTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.bookmarkTable td, .bookmarkTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.bookmarkTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.bookmarkTable tr:hover {
+  background-color: #ddd;
+}
+
+.bookmarkTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #3490dc;
+  color: white;
+}
+
+.bookmarkTable a {
+  color: black;
+}
