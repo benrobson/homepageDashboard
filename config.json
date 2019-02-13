@@ -1,0 +1,12 @@
+{
+  "databasehost": "process.env.databasehost",
+  "databaseuser": "process.env.databaseuser",
+  "databasepassword": "process.env.databasepassword",
+  "databasedatabase": "process.env.databasedatabase",
+
+  "sessionsecret": "process.env.sessionsecret",
+  "adminpaneluser": "process.env.adminpaneluser",
+  "adminpanelpassword": "process.env.adminpanelpassword",
+
+  "applicationlistenport": "process.env.applicationlistenport"
+}
