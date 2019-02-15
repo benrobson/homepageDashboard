@@ -45,28 +45,79 @@ connection.connect(function(err) {
 //
 // Homepage
 //
+
+// Favorites [Main]
 app.get('/', function (req, res) {
   let sql = `SELECT * FROM homepageDashboard WHERE category = 'favorites'`;
   connection.query (sql, function (err, result) {
     if (err) {
       throw err;
     } else {
-      console.log (req.body);
-      console.log(result);
       obj = {objdata: result};
       res.render('index', obj)
     }
   });
 });
 
-app.get('/getcatagory', function (req, res) {
-  let sql = `SELECT * FROM homepageDashboard WHERE category = '${req.query.category}}'`;
+// Social Media
+app.get('/socialmedia', function (req, res) {
+  let sql = `SELECT * FROM homepageDashboard WHERE category = 'socialmedia'`;
   connection.query (sql, function (err, result) {
     if (err) {
       throw err;
     } else {
-      console.log (req.query);
-      console.log(result);
+      obj = {objdata: result};
+      res.render('index', obj)
+    }
+  });
+});
+
+// Streaming
+app.get('/streaming', function (req, res) {
+  let sql = `SELECT * FROM homepageDashboard WHERE category = 'streaming'`;
+  connection.query (sql, function (err, result) {
+    if (err) {
+      throw err;
+    } else {
+      obj = {objdata: result};
+      res.render('index', obj)
+    }
+  });
+});
+
+// Utilities
+app.get('/utilities', function (req, res) {
+  let sql = `SELECT * FROM homepageDashboard WHERE category = 'utilities'`;
+  connection.query (sql, function (err, result) {
+    if (err) {
+      throw err;
+    } else {
+      obj = {objdata: result};
+      res.render('index', obj)
+    }
+  });
+});
+
+// Development
+app.get('/streaming', function (req, res) {
+  let sql = `SELECT * FROM homepageDashboard WHERE category = 'development'`;
+  connection.query (sql, function (err, result) {
+    if (err) {
+      throw err;
+    } else {
+      obj = {objdata: result};
+      res.render('index', obj)
+    }
+  });
+});
+
+// Other Resources
+app.get('/otherresources', function (req, res) {
+  let sql = `SELECT * FROM homepageDashboard WHERE category = 'otherresources'`;
+  connection.query (sql, function (err, result) {
+    if (err) {
+      throw err;
+    } else {
       obj = {objdata: result};
       res.render('index', obj)
     }
@@ -212,5 +263,5 @@ app.get('/remove', urlencodedParser, function (req, res) {
 //
 // Application Boot
 //
-app.listen(process.env.PORT || config.applicationlistenport);
-console.log(chalk.yellow('[CONSOLE] ' ) + 'Application is listening to the port ' + config.applicationlistenport);
+app.listen(process.env.PORT || '8080');
+console.log(chalk.yellow('[CONSOLE] ' ) + 'Application is listening to the port ' + '8080');

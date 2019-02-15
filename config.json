@@ -1,12 +1,12 @@
 {
-  "databasehost": "process.env.databasehost",
-  "databaseuser": "process.env.databaseuser",
-  "databasepassword": "process.env.databasepassword",
-  "databasedatabase": "process.env.databasedatabase",
+  "databasehost": "sql12.freemysqlhosting.net",
+  "databaseuser": "sql12278295",
+  "databasepassword": "wl12nSjgxK",
+  "databasedatabase": "sql12278295",
 
-  "sessionsecret": "process.env.sessionsecret",
-  "adminpaneluser": "process.env.adminpaneluser",
-  "adminpanelpassword": "process.env.adminpanelpassword",
+  "sessionsecret": "S#%*TB0I*",
+  "adminpaneluser": "admin",
+  "adminpanelpassword": "password",
 
   "applicationlistenport": "8080"
 }
