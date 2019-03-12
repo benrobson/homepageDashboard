@@ -3,14 +3,12 @@
 */
 html {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  margin: 0 auto;
-  max-width: auto;
-  background-color: #00bfff;
+  overflow-y: scroll;
 }
 
 #particle-div {
-  min-width: 100%;
-  min-height: 100%;
+  min-width: auto;
+  min-height: auto;
 }
 
 a {
@@ -69,10 +67,6 @@ a {
   min-width: 930px;
   height: 100%;
   padding: 10px;
-}
-
-.bookmarkEntry {
-
 }
 
 /*

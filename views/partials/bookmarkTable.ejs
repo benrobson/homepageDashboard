@@ -15,9 +15,9 @@
       <td><%= data.name %></td>
       <td><a href="<%= data.link %>"><%= data.link %></a></td>
       <td><img src="<%= data.image %>" height="100px"></td>
-      <td><%= data.description %></td>
+      <td style="min-width:20px; line-height:20px"><%= data.description %></td>
       <td><%= data.category %></td>
-      <td>
+      <td style="min-width:180px">
         <a href="/edit?id=<%= data.id %>"><button class="btn-warning" method="post" type="button"><i class="fas fa-user-edit"></i> Edit</button></a>
         <a href="/remove?id=<%= data.id %>"><button class="btn-danger" method="post" type="button" onclick="confirmDeletion()" ><i class="fas fa-user-minus"></i> Delete</button></a>
       </td>
