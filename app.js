@@ -72,6 +72,19 @@ app.get('/socialmedia', function (req, res) {
   });
 });
 
+// Ministry
+app.get('/ministry', function (req, res) {
+  let sql = `SELECT * FROM homepageDashboard WHERE category LIKE 'ministry'`;
+  connection.query (sql, function (err, result) {
+    if (err) {
+      throw err;
+    } else {
+      obj = {objdata: result};
+      res.render('index', obj)
+    }
+  });
+});
+
 // Streaming
 app.get('/streaming', function (req, res) {
   let sql = `SELECT * FROM homepageDashboard WHERE category LIKE 'streaming'`;
