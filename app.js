@@ -48,7 +48,7 @@ connection.connect(function(err) {
 
 // Favorites [Main]
 app.get('/', function (req, res) {
-  let sql = `SELECT * FROM homepageDashboard WHERE category = 'favorites'`;
+  let sql = `SELECT * FROM homepageDashboard WHERE category LIKE 'favorites'`;
   connection.query (sql, function (err, result) {
     if (err) {
       throw err;
@@ -61,7 +61,7 @@ app.get('/', function (req, res) {
 
 // Social Media
 app.get('/socialmedia', function (req, res) {
-  let sql = `SELECT * FROM homepageDashboard WHERE category = 'socialmedia'`;
+  let sql = `SELECT * FROM homepageDashboard WHERE category LIKE 'socialmedia'`;
   connection.query (sql, function (err, result) {
     if (err) {
       throw err;
@@ -74,7 +74,7 @@ app.get('/socialmedia', function (req, res) {
 
 // Streaming
 app.get('/streaming', function (req, res) {
-  let sql = `SELECT * FROM homepageDashboard WHERE category = 'streaming'`;
+  let sql = `SELECT * FROM homepageDashboard WHERE category LIKE 'streaming'`;
   connection.query (sql, function (err, result) {
     if (err) {
       throw err;
@@ -87,7 +87,7 @@ app.get('/streaming', function (req, res) {
 
 // Utilities
 app.get('/utilities', function (req, res) {
-  let sql = `SELECT * FROM homepageDashboard WHERE category = 'utilities'`;
+  let sql = `SELECT * FROM homepageDashboard WHERE category LIKE 'utilities'`;
   connection.query (sql, function (err, result) {
     if (err) {
       throw err;
@@ -99,8 +99,8 @@ app.get('/utilities', function (req, res) {
 });
 
 // Development
-app.get('/streaming', function (req, res) {
-  let sql = `SELECT * FROM homepageDashboard WHERE category = 'development'`;
+app.get('/development', function (req, res) {
+  let sql = `SELECT * FROM homepageDashboard WHERE category LIKE 'development'`;
   connection.query (sql, function (err, result) {
     if (err) {
       throw err;
@@ -113,7 +113,7 @@ app.get('/streaming', function (req, res) {
 
 // Other Resources
 app.get('/otherresources', function (req, res) {
-  let sql = `SELECT * FROM homepageDashboard WHERE category = 'otherresources'`;
+  let sql = `SELECT * FROM homepageDashboard WHERE category LIKE 'otherresources'`;
   connection.query (sql, function (err, result) {
     if (err) {
       throw err;

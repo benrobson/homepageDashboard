@@ -9,8 +9,8 @@ html {
 }
 
 #particle-div {
-  max-width: 100%;
-  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 a {
@@ -78,8 +78,7 @@ a {
 /*
     Misc
 */
-.addleaderbutton {
+.addsitebutton {
   float: right;
-  padding-top: 20px;
-  padding-right: 15px;
+  padding: 20px;
 }

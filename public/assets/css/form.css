@@ -1,7 +1,10 @@
 form {
+  padding: 50px;
+  background-color: white;
   margin: 0 auto;
   width: 700px;
   padding: 20px;
+  border-radius: 2px;
 }
 
 form input[type=text], input[type=date], input[type=email], input[type=password], select {
@@ -31,4 +34,12 @@ form input[type=submit]:hover {
 
 textarea {
   width: 100%;
+}
+
+.formclass {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
 }

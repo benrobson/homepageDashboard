@@ -1,19 +1,25 @@
 <div class="bookmarkMainTable">
   <div class="categoryPanel">
-    <a href="/">Favorites</a><br>
-    <a href="/socialmedia">Social Media</a><br>
-    <a href="/streaming">Streaming</a><br>
-    <a href="/utilites">Utilities</a><br>
-    <a href="/development">Development</a><br>
-    <a href="/otherresources">Other Resources</a>
+    <a href="/"><i class="fas fa-star"></i> Favorites</a><br>
+    <a href="/socialmedia"><i class="fas fa-share-square"></i> Social Media</a><br>
+    <a href="/streaming"><i class="fas fa-microphone"></i> Streaming</a><br>
+    <a href="/utilities"><i class="fas fa-tools"></i> Utilities</a><br>
+    <a href="/development"><i class="far fa-paper-plane"></i> Development</a><br>
+    <a href="/otherresources"><i class="fas fa-paperclip"></i> Other Resources</a>
   </div>
 
   <div class="linksPanel">
-    <% objdata.forEach(function (data) { %>
-      <div class="bookmarkEntry">
-        <a href="<%= data.link %>" target="_blank"><img src="<%= data.image %>" height="100px"></a>
-      </div>
-    <% }) %>
+    <table>
+      <tr>
+        <% objdata.forEach(function (data) { %>
+          <td>
+            <div class="bookmarkEntry" mousetip mousetip-msg="<%= data.name %><br><%= data.link %><br><br><%= data.description %>">
+              <a href="<%= data.link %>" target="_blank"><img src="<%= data.image %>" height="100px"></a>
+            </div>
+          </td>
+        <% }) %>
+      </tr>
+    </table>
   </div>
 
   <div class="loginbuttoncorner"><a href="/login"><button class="btn-primary" method="post" type="button"><i class="fas fa-sign-in-alt"></i> Login</button></a></div>

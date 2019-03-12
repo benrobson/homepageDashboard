@@ -4,14 +4,14 @@
     <% include partials/header.ejs %>
   </head>
   <body>
-    <h1>Add a Site</h1>
-      <div id="addtable">
+      <div id="formclass">
         <form id="addform" method="post" action="/add">
+          <h1>Add a Site</h1>
           <label for="name">Site Name: </label>
             <input type="text" name="name" placeholder="Google" required />
           <label for="link">Site Link: </label>
             <input type="text" name="link" placeholder="http://www.google.com.au" required />
-          <label for="description">Site description: </label>
+          <label for="description">Site Description: </label>
             <input type="text" name="description" placeholder="This is the homepage of the internet." required />
           <label for="image">Site Image: </label>
             <input type="text" name="image" placeholder="https://i.imgur.com/EJOjIMC.jpg" required />
