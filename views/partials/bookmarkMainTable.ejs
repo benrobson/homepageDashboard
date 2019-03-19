@@ -15,7 +15,7 @@
         <% objdata.forEach(function (data) { %>
           <td>
             <div class="bookmarkEntry" mousetip mousetip-msg="<%= data.name %><br><%= data.link %><br><br><%= data.description %>">
-              <a href="<%= data.link %>" target="_blank"><img src="<%= data.image %>" height="100px"></a>
+              <a href="<%= data.link %>" target="_blank"><img src="<%= data.image %>" height="100px" draggable="false"></a>
             </div>
           </td>
         <% }) %>

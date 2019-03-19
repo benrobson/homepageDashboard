@@ -5,8 +5,8 @@
   "databasedatabase": "sql12278295",
 
   "sessionsecret": "S#%*TB0I*",
-  "adminpaneluser": "admin",
-  "adminpanelpassword": "password",
+  "adminpaneluser": "process.env.adminpaneluser",
+  "adminpanelpassword": "process.env.adminpanelpassword",
 
   "applicationlistenport": "8080"
 }
