@@ -152,7 +152,7 @@ app.get('/login', function (req, res) {
 
 app.post('/login', urlencodedParser, function (req, res) {
   session = req.session;
-  if (req.body.username == config.adminpaneluser && req.body.password == config.adminpanelpassword) {
+  if (req.body.username == process.env.adminpaneluser && req.body.password == process.env.adminpanelpassword) {
     session.uniqueID = req.body.username;
     res.redirect('/admin');
     console.log(chalk.yellow('[CONSOLE] ') + chalk.magenta('[ADMIN] ') + 'A user has successfully logged in as Administrator.');
